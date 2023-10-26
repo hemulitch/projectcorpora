@@ -1,0 +1,138 @@
+body {
+  background: url("v904-nunny-026.jpg");
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat';
+  color: #cb696a;
+}
+/* main page */
+p{
+  font-family: 'Montserrat';
+  color: #cb696a;
+  text-align: left;
+}
+h1 {
+  font-family: 'Montserrat';
+  color: #cb696a;
+  text-align: center;
+}
+.container{
+  display: flex;
+  gap: 20px;
+}
+.column{
+  border: 1px solid #cb696a;
+  padding: 20px;
+  border-radius: 10px;
+}
+#main_page_button {
+  text-align: center;
+  font-size: 24px;
+  padding: 14px 28px;
+  border: 1px solid #cb696a;
+  background-color: #35333200;
+  color:#cb696a;
+  width: 250px;
+}
+#main_page_button:hover {
+  background-color: #cb696a;
+  color:#f7f2ed;
+}
+#main_page_form{
+  text-align:center;
+  margin: 40px;
+}
+/* search page */
+#sets-container {
+  display: flex;
+  gap: 20px; 
+}
+.input-set {
+  border: 1px solid #cb696a;
+  border-radius: 10px;
+  margin-right: 20px; 
+  margin-bottom: 20px;
+  background-color:#bbdbc900;
+  padding: 20px;
+  flex: 1; 
+}
+#buttons-group {
+  display: flex;
+  flex-direction: row; 
+  gap: 20px; 
+}
+#search-button{
+  border: 1px solid #cb696a;
+  color:#cb696a;
+  padding: 14px 28px;
+  font-size: 16px;
+  background-color: #f7f2ed00;
+}
+#search-button:hover{
+  background-color: #cb696a;
+  color:#f7f2ed;
+}
+#plus-button{
+  border: 1px solid #cb696a;
+  color:#cb696a;
+  padding: 7px 14px;
+  font-size: 24px;
+  background-color: #f7f2ed00;
+}
+#plus-button:hover{
+  background-color: #cb696a;
+  color:#f7f2ed;
+}
+form{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+input{
+  border: 1px solid #cb696a;
+  padding: 12px 20px;
+  margin-top: 4px;
+  margin-bottom: 16px;
+}
+form select{
+  border: 1px solid #cb696a;
+  height: 46px;
+}
+/* results page */
+.result-box {
+  background-color: white;
+  padding: 15px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.result-sent {
+  margin: 0; 
+  margin-bottom: 5px;
+}
+.result-source {
+  font-style: italic;
+  color: #888; 
+  font-size: 14px; 
+  margin: 0; 
+}
+.center-content {
+  text-align: center;
+  margin: 20px 0; 
+}
+.styled-link {
+  border: 1px solid #cb696a;
+  color: #cb696a;
+  padding: 14px 28px;
+  font-size: 16px;
+  background-color: #f7f2ed00;
+  text-decoration: none; 
+  display: inline-block; 
+  transition: background-color 0.3s; 
+}
+.styled-link:hover {
+  background-color: #cb696a;
+  color: white;
+}
