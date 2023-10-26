@@ -1,0 +1,92 @@
+{% extends 'base.html' %}
+
+{% block title %} Корпус анекдотов {% endblock %}
+
+{% block content %}
+<h1>поиск по корпусу</h1>
+
+<div id="form-container">
+  <form class="search-form" action="/search" method="POST">
+    <div id="sets-container"> 
+        <div class="input-set" style="display: block;">
+
+            <p style="font-weight: bolder;">лемма</p>
+            <input type="text" name="lemma1" placeholder="введите лемму">
+            <p style="font-weight: bolder;">словоформа</p>
+            <input type="text" name="word1" placeholder="введите словоформу">
+            <p style="font-weight: bolder;">часть речи </p>
+            <select name="pos1" placeholder="введите часть речи">
+                <option value=""></option>
+                <option value="VERB">глагол</option>
+                <option value="NOUN">существительное</option>
+                <option value="ADJ">прилагательное</option>
+                <option value="ADV">наречие</option>
+                <option value="PRON">местоимение</option>
+                <option value="NUM">числительное</option>
+                <option value="DET">детерминатив</option>
+                <option value="PROPN">имя собственное</option>
+                <option value="ADP">предлог</option>
+                <option value="PART">частица</option>
+                <option value="SCONJ">подчинительный союз</option>
+                <option value="CCONJ">сочинительный союз</option>
+                <option value="INTJ">междометие</option>
+            </select>
+        </div>
+
+        <div class="input-set" style="display: none;">
+            <p style="font-weight: bolder;">лемма</p>
+            <input type="text" name="lemma2" placeholder="введите лемму">
+            <p style="font-weight: bolder;">словоформа</p>
+            <input type="text" name="word2" placeholder="введите словоформу">
+            <p style="font-weight: bolder;">часть речи </p>
+            <select name="pos2" placeholder="введите часть речи">
+                <option value=""></option>
+                <option value="VERB">глагол</option>
+                <option value="NOUN">существительное</option>
+                <option value="ADJ">прилагательное</option>
+                <option value="ADV">наречие</option>
+                <option value="PRON">местоимение</option>
+                <option value="NUM">числительное</option>
+                <option value="DET">детерминатив</option>
+                <option value="PROPN">имя собственное</option>
+                <option value="ADP">предлог</option>
+                <option value="PART">частица</option>
+                <option value="SCONJ">подчинительный союз</option>
+                <option value="CCONJ">сочинительный союз</option>
+                <option value="INTJ">междометие</option>
+            </select>
+        </div>
+
+        <div class="input-set" style="display: none;">
+            <p style="font-weight: bolder;">лемма</p>
+            <input type="text" name="lemma3" placeholder="введите лемму">
+            <p style="font-weight: bolder;">словоформа</p>
+            <input type="text" name="word3" placeholder="введите словоформу">
+            <p style="font-weight: bolder;">часть речи </p>
+            <select name="pos3" placeholder="введите часть речи">
+                <option value=""></option>
+                <option value="VERB">глагол</option>
+                <option value="NOUN">существительное</option>
+                <option value="ADJ">прилагательное</option>
+                <option value="ADV">наречие</option>
+                <option value="PRON">местоимение</option>
+                <option value="NUM">числительное</option>
+                <option value="DET">детерминатив</option>
+                <option value="PROPN">имя собственное</option>
+                <option value="ADP">предлог</option>
+                <option value="PART">частица</option>
+                <option value="SCONJ">подчинительный союз</option>
+                <option value="CCONJ">сочинительный союз</option>
+                <option value="INTJ">междометие</option>
+            </select>
+        </div>
+      </div>
+
+      <div id="buttons-group">
+          <button id="search-button" type="submit">Найти</button>
+          <button id="plus-button" type="button">+</button>
+      </div>
+  </form>
+</div>
+
+{% endblock %}

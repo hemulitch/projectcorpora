@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %} Корпус {% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="column">
+        <p style="font-weight: bolder;">что это? </p>
+        <p>наш проект по курсу Автобрея & корпус текстов анекдотов</p>
+    </div>
+    <div class="column">
+        <p style="font-weight: bolder;">кто это сделал? </p>
+        <p>алёна муравьева, саша сидоркина, настя пахомова, аня смекалова</p>
+    </div>
+    <div class="column">
+        <p style="font-weight: bolder;">что с этим делать?</p>
+        <p>нажать на кнопку "начать" и искать что угодно по корпусу анекдотов!</p>
+    </div>
+</div>
+<form id="main_page_form" action="/search">
+    <button id="main_page_button" type="submit">начать</button>
+</form>
+
+{% endblock %}

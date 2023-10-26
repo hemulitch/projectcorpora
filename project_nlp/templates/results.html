@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %} Корпус анекдотов {% endblock %}
+
+{% block content %}
+
+<div class="center-content">
+    <a href="/search" class="styled-link">вернуться к поиску</a>
+</div>
+
+<h1>результаты поиска по запросу "{{ search }}"</h1>
+
+{% for source, sent in results %}
+<div class="result-box">  
+    <p class="result-sent">{{ sent | safe }} </p> 
+    <p class="result-source">{{ source }}</p>
+</div>
+{% endfor %}
+
+{% endblock %}
