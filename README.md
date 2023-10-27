@@ -13,4 +13,4 @@
   3. **words** с инф-й о словах (text_id, sent_id, word_id - номер слова в предложении, word - слово, lemma - лемма, pos - часть речи)
 
 ### • project_nlp
-Веб-приложение нашего корпуса
+Веб-приложение нашего корпуса, [ссылка](http://nlpsuper228.pythonanywhere.com)
