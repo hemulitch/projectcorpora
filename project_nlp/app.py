@@ -73,7 +73,7 @@ def results():
         if lemma1:
             query = query.filter(Trigrams.lemma1 == lemmatization(lemma1))
             search += lemma1
-            to_highlight += lemma1
+
         if word1:
             query = query.filter(func.lower(Trigrams.word1) == word1.lower())
             if not lemma1:
